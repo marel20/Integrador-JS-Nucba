@@ -1,0 +1,54 @@
+/* slide animation */
+
+@keyframes autoplay{
+    14%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    
+    28%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    42%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+  
+    56%{
+      transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+
+    70%{
+      transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+
+    84%{
+      transform: translate3d(calc(-100% * 5), 0, 0);
+    }
+
+    100%{
+      transform: translate3d(calc(-100% * 6), 0, 0);
+    }
+  }
+
+  /* spin animation */
+  @keyframes spin{
+    from{
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+  
+    to{
+      transform: rotateX(0deg) rotateY(360deg);
+    }
+  }
+  
+  @keyframes bg-animate{
+    0%{
+        background-position: 0% 200%;
+    }
+    50%{
+        background-position: 200% 0%;
+    }
+    100%{
+        background-position: 0% 330%;
+    }
+  }

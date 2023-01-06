@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/logo/logo-S.png" type="logo" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/medias.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <script
+      src="https://kit.fontawesome.com/0ba329a6e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Supermercado Supersol</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nav" class="menu">
+        <section class="menu-container">
+          <div class="menu-logo">
+            <img src="assets/logo/logo-supersol.png" alt="Logo_Supersol" />
+          </div>
+
+          <ul class="menu-links">
+            <li>
+              <a href="#home" class="menu-link">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#company" class="menu-link">Empresa</a>
+            </li>
+
+            <li>
+              <a href="#products" class="menu-link">Productos </a>
+            </li>
+
+            <li>
+              <a href="pages/contact.html" class="menu-link">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="user-cart">
+            <a href="pages/login.html"><i class="fa-solid fa-user"></i></a>
+            <button><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="menu-hamburguer">
+            <img
+              src="assets/icons/menu.png"
+              class="menu-img"
+              alt="menu-hamburguer"
+            />
+          </div>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <article class="container-all">
+          <input type="radio" id="1" name="image-slide" hidden />
+          <input type="radio" id="2" name="image-slide" hidden />
+          <input type="radio" id="3" name="image-slide" hidden />
+          <input type="radio" id="4" name="image-slide" hidden />
+          <input type="radio" id="5" name="image-slide" hidden />
+          <input type="radio" id="6" name="image-slide" hidden />
+          <input type="radio" id="7" name="image-slide" hidden />
+
+          <div class="slide">
+            <div class="item-slide">
+              <img src="assets/img/banner1.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/banner2.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/banner3.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/bsf.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/horarios.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/tarjetas1.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/tarjetas2.png" />
+            </div>
+          </div>
+
+          <div class="pagination">
+            <label class="pagination-item" for="1">
+              <img src="assets/img/banner1.png" />
+            </label>
+
+            <label class="pagination-item" for="2">
+              <img src="assets/img/banner2.png" />
+            </label>
+
+            <label class="pagination-item" for="3">
+              <img src="assets/img/banner3.png" />
+            </label>
+
+            <label class="pagination-item" for="4">
+              <img src="assets/img/bsf.png" />
+            </label>
+
+            <label class="pagination-item" for="5">
+              <img src="assets/img/horarios.png" />
+            </label>
+
+            <label class="pagination-item" for="6">
+              <img src="assets/img/tarjetas1.png" />
+            </label>
+
+            <label class="pagination-item" for="7">
+              <img src="assets/img/tarjetas2.png" />
+            </label>
+          </div>
+        </article>
+      </section>
+      <section id="company">
+        <article>
+          <div>
+            <iframe
+              title="Noticias"
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnorick1&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="330"
+              height="400"
+              scrolling="yes"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            >
+            </iframe>
+          </div>
+        </article>
+      </section>
+      <section id="products">
+        <article>
+          <div class="cards">
+            <div class="card-product">
+              <div class="card-img">
+                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
+              </div>
+              <div class="card-tittle">
+                <h3>Shampoo y Acondicionador Dove</h3>
+              </div>
+              <div class="card-bid">
+                <h5>$179.60</h5>
+
+                <button><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+            <div class="card-product"></div>
+            <div class="card-product"></div>
+          </div>
+          <!-- <div>
+            <h2>Servicios técnicos e instalaciones en la zona</h2>
+          </div>
+          <div class="spool">
+            <div class="spool-item"></div>
+            <div class="spool-item"></div>
+            <div class="spool-item"></div>
+            <div class="spool-item"></div>
+          </div>
+          <div class="spool2">
+            <div class="spool-item"></div>
+            <div class="spool-item"></div>
+            <div class="spool-item"></div>
+            <div class="spool-item"></div>
+          </div> -->
+        </article>
+      </section>
+      <div class="btn-up">
+        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+      </div>
+    </main>
+    <footer>
+      <div class="info">
+        <div class="social-media">
+          <a href="https://www.instagram.com/tecno.rick" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/tecnorick5" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="mailto:tecnorickseguridad@hotmail.com" target="_blank"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </div>
+        <div class="download">
+          <p>fff</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2022 Copyright:
+          <b
+            ><a href="https://www.mgsolutions.com.ar" target="_blank"
+              >MG Solutions</a
+            ></b
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/utilities.js"></script>
+  </body>
+</html>
