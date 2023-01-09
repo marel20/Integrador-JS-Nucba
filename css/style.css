@@ -319,10 +319,14 @@ input[id="7"]:checked ~ .pagination .pagination-item[for="7"]{
     gap: 20px;
     width: 30%;
     margin: 20px auto;
+    background: var(--bg-primary);
+    padding: 15px;
+    border-radius: 10px;
 }
 .card-product .card-img img{
     align-items: center;
     width: 100%;
+    border-radius: 10px;
 }
 .card-bid{
     display: flex;
@@ -330,8 +334,8 @@ input[id="7"]:checked ~ .pagination .pagination-item[for="7"]{
     align-items: center;
 }
 .btn-add-card{
-    background: var(--bg-primary);
-    color: var(--details);
+    background: var(--bg-secondary);
+    color: var(--tx-details);
     border: none;
     border-radius: 10px;
     padding: 10px;
