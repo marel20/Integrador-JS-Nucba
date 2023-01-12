@@ -19,33 +19,60 @@
   </head>
   <body>
     <header>
-      <div class="container-navbar">
-        <div class="btn-back">
-          <a href="login.html"
-            ><i class="fa-solid fa-chevron-left"></i> Atrás</a
-          >
+      <section class="container-navbar">
+        <div>
+          <img
+            class="nav-logo"
+            src="../assets/logo/logo-supersol.png"
+            alt="logo-supersol"
+          />
         </div>
 
         <nav id="nav">
           <ul class="nav-list">
-            <li class="nav-link"><a href="../index.html#header">Inicio</a></li>
             <li class="nav-link">
-              <a href="../index.html#company">Empresa</a>
+              <a href="../index.html#home" class="menu-link">Inicio</a>
             </li>
+
             <li class="nav-link">
-              <a href="../index.html#products">Productos</a>
+              <a href="../index.html#company" class="menu-link">La Empresa</a>
             </li>
-            <li class="nav-link"><a href="contact.html">Contacto</a></li>
+
+            <li class="nav-link">
+              <a href="../index.html#products" class="menu-link">Productos</a>
+            </li>
+
+            <li class="nav-link">
+              <a href="contact.html" class="menu-link">Contacto</a>
+            </li>
           </ul>
         </nav>
 
-        <div class="cart-user">
-          <a href="pages/login.html"><i class="fa-solid fa-user"></i></a>
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="user-cart">
+          <a href="login.html" class="user"><i class="fa-solid fa-user"></i></a>
+          <button id="open-close" class="cart"
+          ><i class="fa-solid fa-cart-shopping"> </i
+          ></button>
         </div>
         <div class="nav-toggle">|||</div>
-      </div>
-    </header>
+
+        <div id="cart-menu" class="container-cart">
+          <div class="list-cart">
+            <p>Probando</p>
+            <p>Probando</p>
+            <p>Probando</p>
+            <p>Probando</p>
+            <p>Probando</p>
+            <p>Probando</p>
+          </div>
+          <div class="btn-cart">
+            <button>Vaciar Carrito</button>
+            <button>Finalizar Compra</button>
+          </div>
+        </div>
+      </section>
+    </nav>
+  </header>
     <main>
       <section class="register">
         <h3>Complete los datos requeridos para su registro</h3>
@@ -167,8 +194,8 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
-    <script type="text/javascript" src="js/utilities.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script type="text/javascript" src="../js/utilities.js"></script>
   </body>
 </html>

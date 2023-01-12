@@ -14,25 +14,21 @@
     }
 
     .nav-logo{
-        margin: 10px auto !important;
-    }
-
-    .nav-logo img{
-        width: 150px;
+        width: 80px;
     }
 
     nav{
         position: absolute;
-        top: -100vh;
+        top: -120vh;
         display: flex;
         flex-direction: column;
-        background: var(--bg-primary);
+        background: var(--bg-primary-transp);
         text-align: center;
         overflow: hidden;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 120px);
         width: 100%;
-        z-index: -1;
         transition: .6s;
+        padding: 10px !important;
     }
 
     nav .nav-list{
@@ -40,25 +36,18 @@
         margin: 0 auto;
     }
 
-    .nav-link a{
-        color: var(--details) !important;
-        font-weight: bold;
-    }
-
     .active{
-        top: 100px;
+        top: 120px;
+        left: 0;
     }
 
-    .contariner-all{
-    height: 20vh !important;
+    .container-cart{
+        width: 80%;
+        height: 65vh;
     }
 
-    .card-product{
-        width: 45%;
-    }
-    .card-tittle h2{
-        font-size: 25px !important;
-    }
+
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px){
@@ -76,26 +65,18 @@
         margin-right: 30px;
     }
 
-    .nav-logo{
-        margin: 10px auto !important;
-    }
-
-    .nav-logo img{
-        margin-left: 10px;
-    }
-
     nav{
         position: absolute;
-        top: -100vh;
+        top: -120vh;
         display: flex;
         flex-direction: column;
-        background: var(--bg-primary);
+        background: var(--bg-secondary-transp);
         text-align: center;
         overflow: hidden;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 120px);
         width: 100%;
-        z-index: -1;
         transition: .6s;
+        padding: 10px !important;
     }
 
     nav .nav-list{
@@ -103,21 +84,19 @@
         margin: 0 auto;
     }
 
-    .nav-link a{
-        color: var(--details) !important;
-        font-weight: bold;
-    }
-
     .active{
-        top: 100px;
+        top: 120px;
+        left: 0;
     }
 
+    .container-cart{
+        width: 80%;
+        height: 65vh;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1100px){
-    .nav-logo img{
-        margin-left: 10px;
-    }
+
 }
 
 

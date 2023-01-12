@@ -23,28 +23,71 @@
   </head>
   <body>
     <header>
-      <div class="container-navbar">
-        <div class="nav-logo">
-          <img src="assets/logo/logo-supersol.png" alt="" />
-        </div>
+        <section class="container-navbar">
+          <div>
+            <img
+              class="nav-logo visible"
+              src="assets/logo/logo-supersol.png"
+              alt="logo-supersol"
+            />
+            <img
+            class="nav-logo hidden"
+            src="assets/logo/logo-S.png"
+            alt="logo-supersol"
+          />
+          </div>
 
-        <nav id="nav">
-          <ul class="nav-list">
-            <li class="nav-link"><a href="#header">Inicio</a></li>
-            <li class="nav-link"><a href="#company">Empresa</a></li>
-            <li class="nav-link"><a href="#products">Productos</a></li>
-            <li class="nav-link"><a href="pages/contact.html">Contacto</a></li>
-          </ul>
-        </nav>
+          <nav id="nav">
+            <ul class="nav-list">
+              <li class="nav-link">
+                <a href="#home" class="menu-link">Inicio</a>
+              </li>
 
-        <div class="cart-user">
-          <a href="pages/login.html"><i class="fa-solid fa-user"></i></a>
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <div class="nav-toggle">|||</div>
-      </div>
+              <li class="nav-link">
+                <a href="#company" class="menu-link">La Empresa</a>
+              </li>
+
+              <li class="nav-link">
+                <a href="#products" class="menu-link">Productos</a>
+              </li>
+
+              <li class="nav-link">
+                <a href="pages/contact.html" class="menu-link">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="user-cart">
+            <a href="pages/login.html" class="user"><i class="fa-solid fa-user"></i></a>
+            <button id="open-close" class="cart"
+            ><i class="fa-solid fa-cart-shopping"> </i
+            ></button>
+          </div>
+          <div class="nav-toggle">|||</div>
+
+          <div id="cart-menu" class="container-cart">
+            <div class="list-cart">
+              <p>Probando</p>
+              <p>Probando</p>
+              <p>Probando</p>
+              <p>Probando</p>
+              <p>Probando</p>
+              <p>Probando</p>
+            </div>
+            <div class="btn-cart">
+              <button>Vaciar Carrito</button>
+              <button>Finalizar Compra</button>
+            </div>
+          </div>
+        </section>
+      </nav>
     </header>
+  
     <main>
+      <section id="search">
+        <article></article>
+      </section>
+
       <section id="home">
         <article class="container-all">
           <input type="radio" id="1" name="image-slide" hidden />
@@ -116,7 +159,7 @@
           </div>
         </article>
       </section>
-      <section id="company">
+      <!-- <section id="company">
         <article>
           <div>
             <iframe
@@ -211,7 +254,7 @@
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div>
             <h2>Servicios técnicos e instalaciones en la zona</h2>
           </div>
@@ -230,23 +273,23 @@
         </article>
       </section>
       <div class="btn-up">
-        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        <a href="#search"><i class="fa-solid fa-circle-arrow-up"></i></a>
       </div>
     </main>
     <footer>
       <div class="info">
         <div class="social-media">
-          <a href="https://www.instagram.com/tecno.rick" target="_blank"
+          <a href="https://www.instagram.com/" target="_blank"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-          <a href="https://www.facebook.com/tecnorick5" target="_blank"
+          <a href="https://www.facebook.com/" target="_blank"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-          <a href="mailto:tecnorickseguridad@hotmail.com" target="_blank"
+          <a href="mailto:" target="_blank"
             ><i class="fa-regular fa-envelope"></i
           ></a>
         </div>
-        <div class="download">
+        <div class="text-footer">
           <p>fff</p>
         </div>
       </div>

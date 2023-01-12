@@ -11,10 +11,21 @@ if(window.scrollY > nav.offsetHeight + 1100) {
 }
 
 // navbar
-const toggle = document.querySelector('.nav-toggle');
-const links = document.querySelector('nav');
+ const toggle = document.querySelector('.nav-toggle');
+ const links = document.querySelector('nav');
 
-toggle.addEventListener('click', () => {
-    toggle.classList.toggle('rotate');
-    links.classList.toggle('active');
+ toggle.addEventListener('click', () => {
+     toggle.classList.toggle('rotate');
+     links.classList.toggle('active');
 })
+
+
+//cart-toggle
+var openClose = document.getElementById("open-close");
+var menuHamburguer = document.getElementById("cart-menu");
+
+openClose.addEventListener("click", () =>{
+    menuHamburguer.classList.toggle("take-off");
+})
+
+// searchbar
