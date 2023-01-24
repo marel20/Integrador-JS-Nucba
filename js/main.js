@@ -33,7 +33,7 @@ openClose.addEventListener("click", () =>{
 const btnFilter    = document.querySelectorAll('.btn-filter')
     
 btnFilter.forEach( ( cadaBtnFilter , i )=>{
-    btnFilter[i].addEventListener('mouseover', ()=>{
+    btnFilter[i].addEventListener('click', ()=>{
         
         btnFilter.forEach( ( cadaBtnFilter , i )=>{
             btnFilter[i].classList.remove('filter-active')

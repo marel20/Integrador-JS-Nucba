@@ -79,10 +79,7 @@
     </header>
   
     <main>
-      <section id="search">
-        <article></article>
-      </section>
-
+      
       <section id="home">
         <article class="container-all">
           <input type="radio" id="1" name="image-slide" hidden />
@@ -97,11 +94,11 @@
             <div class="item-slide">
               <img src="assets/img/banner1.png" />
             </div>
-
+            
             <div class="item-slide">
               <img src="assets/img/banner2.png" />
             </div>
-
+            
             <div class="item-slide">
               <img src="assets/img/banner3.png" />
             </div>
@@ -109,7 +106,7 @@
             <div class="item-slide">
               <img src="assets/img/bsf.png" />
             </div>
-
+            
             <div class="item-slide">
               <img src="assets/img/horarios.png" />
             </div>
@@ -117,25 +114,25 @@
             <div class="item-slide">
               <img src="assets/img/tarjetas1.png" />
             </div>
-
+            
             <div class="item-slide">
               <img src="assets/img/tarjetas2.png" />
             </div>
           </div>
-
+          
           <div class="pagination">
             <label class="pagination-item" for="1">
               <img src="assets/img/banner1.png" />
             </label>
-
+            
             <label class="pagination-item" for="2">
               <img src="assets/img/banner2.png" />
             </label>
-
+            
             <label class="pagination-item" for="3">
               <img src="assets/img/banner3.png" />
             </label>
-
+            
             <label class="pagination-item" for="4">
               <img src="assets/img/bsf.png" />
             </label>
@@ -143,22 +140,31 @@
             <label class="pagination-item" for="5">
               <img src="assets/img/horarios.png" />
             </label>
-
+            
             <label class="pagination-item" for="6">
               <img src="assets/img/tarjetas1.png" />
             </label>
-
+            
             <label class="pagination-item" for="7">
               <img src="assets/img/tarjetas2.png" />
             </label>
           </div>
         </article>
       </section>
+
+      <section id="search">
+        <article>
+          <div class="search-bar">
+            <input type="search" name="search" id="searchBar" placeholder="Buscá tu producto">
+          </div>
+        </article>
+      </section>
+
       <section id="company">
         <!-- <article>
           <div>
             <iframe
-              title="Noticias"
+            title="Noticias"
               src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnorick1&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
               width="330"
               height="400"
@@ -171,9 +177,92 @@
           </div>
         </article> -->
       </section>
+      <section class="offers">
+        <article>
+          <h2 class="h2">Nuestras ofertas semanales</h2>
+          <div class="cards">
+            <div class="card-product">
+              <div class="card-img">
+                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
+              </div>
+              <div class="card-tittle">
+                <h2>Shampoo y Acondicionador Dove</h2>
+              </div>
+              <div class="card-bid">
+                <h3>$179.60</h3>
+                
+                <button class="btn-add-card">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-product">
+              <div class="card-img">
+                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
+              </div>
+              <div class="card-tittle">
+                <h2>Shampoo y Acondicionador Dove</h2>
+              </div>
+              <div class="card-bid">
+                <h3>$179.60</h3>
+
+                <button class="btn-add-card">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-product">
+              <div class="card-img">
+                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
+              </div>
+              <div class="card-tittle">
+                <h2>Shampoo y Acondicionador Dove</h2>
+              </div>
+              <div class="card-bid">
+                <h3>$179.60</h3>
+
+                <button class="btn-add-card">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-product">
+              <div class="card-img">
+                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
+              </div>
+              <div class="card-tittle">
+                <h2>Shampoo y Acondicionador Dove</h2>
+              </div>
+              <div class="card-bid">
+                <h3>$179.60</h3>
+
+                <button class="btn-add-card">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-product">
+              <div class="card-img">
+                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
+              </div>
+              <div class="card-tittle">
+                <h2>Shampoo y Acondicionador Dove</h2>
+              </div>
+              <div class="card-bid">
+                <h3>$179.60</h3>
+
+                <button class="btn-add-card">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
       <section id="products">
         <div class="filter">
-          <div class="btn-filter">Congelados</div>
+          <div class="btn-filter">Todos</div>
+          <div class="btn-filter">Frescos</div>
           <div class="btn-filter">Almacén</div>
           <div class="btn-filter">Bazar</div>
           <div class="btn-filter">Bebidas</div>
@@ -182,7 +271,6 @@
           <div class="btn-filter">Perfumería</div>
           <div class="btn-filter">Otros</div>
         </div>
-      </div>
         <article>
           <div class="cards">
             <div class="card-product">
@@ -261,26 +349,18 @@
               </div>
             </div>
           </div>
-          <!-- <div>
-            <h2>Servicios técnicos e instalaciones en la zona</h2>
-          </div>
-          <div class="spool">
-            <div class="spool-item"></div>
-            <div class="spool-item"></div>
-            <div class="spool-item"></div>
-            <div class="spool-item"></div>
-          </div>
-          <div class="spool2">
-            <div class="spool-item"></div>
-            <div class="spool-item"></div>
-            <div class="spool-item"></div>
-            <div class="spool-item"></div>
-          </div> -->
         </article>
       </section>
-      <div class="btn-up">
-        <a href="#search"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
+
+      <!-- Float Buttons -->
+      <div id="up" class="btn-up">
+        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
       </div>
+
+
+
+      <!-- Float Buttons -->
     </main>
     <footer>
       <div class="info">
