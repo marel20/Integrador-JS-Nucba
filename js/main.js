@@ -28,4 +28,18 @@ openClose.addEventListener("click", () =>{
     menuHamburguer.classList.toggle("take-off");
 })
 
-// searchbar
+// filter
+
+const btnFilter    = document.querySelectorAll('.btn-filter')
+    
+btnFilter.forEach( ( cadaBtnFilter , i )=>{
+    btnFilter[i].addEventListener('mouseover', ()=>{
+        
+        btnFilter.forEach( ( cadaBtnFilter , i )=>{
+            btnFilter[i].classList.remove('filter-active')
+        })
+
+        btnFilter[i].classList.add('filter-active')
+
+    })
+})
