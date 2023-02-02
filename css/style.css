@@ -416,6 +416,10 @@ input[id="7"]:checked~.pagination .pagination-item[for="7"] {
     text-align: center;
     cursor: pointer;
 }
+.btn-filter:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
 
 .filter-active {
     background: var(--bg-secondary);
