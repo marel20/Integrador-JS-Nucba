@@ -247,6 +247,7 @@ nav {
 
 .container-all {
     display: flex;
+    justify-content: center;
     margin: 50px auto;
     position: relative;
     width: 100%;
@@ -592,7 +593,7 @@ form button:hover {
 footer {
     width: 100%;
     background: var(--bg-primary-transp);
-    height: 170px;
+    height: 235px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -639,6 +640,9 @@ footer {
 
 .text-footer h3 {
     font-size: 30px;
+}
+.text-footer h4 {
+    font-size: 20px;
 }
 
 .text-footer p {

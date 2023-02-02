@@ -75,8 +75,18 @@
     }
 
     .info{
-        flex-direction: column;
-        height: 30vh;
+        flex-direction: column-reverse;
+        height: 25vh;
+    }
+
+    .social-media, .text-footer h3{
+        font-size: 25px;
+    }
+    .social-media{
+        margin-bottom: 15px;
+    }
+    .text-footer h4{
+        font-size: 16px;
     }
 
     .location{
@@ -171,12 +181,26 @@
     }
 
     footer{
-        height: 280px;
+        height: 275px;
     }
 
     .info{
+        flex-direction: column-reverse;
+        height: 25vh;
+    }
+
+    .social-media, .text-footer h3{
+        font-size: 25px;
+    }
+    .social-media{
+        margin-bottom: 15px;
+    }
+    .text-footer h4{
+        font-size: 16px;
+    }
+
+    .location{
         flex-direction: column;
-        height: 30vh;
     }
 
 }
@@ -220,7 +244,14 @@
     .take-off{
         transform: translateY(0%);
     }
-    
+
+    .filter{
+        flex-wrap: wrap !important;
+    }
+
+    footer{
+        height: 185px;
+    }
 }
 
 
