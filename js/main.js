@@ -43,3 +43,48 @@ btnFilter.forEach( ( cadaBtnFilter , i )=>{
 
     })
 })
+
+//searchBar
+
+const search = document.querySelector('#searchBar');
+const btnSearch = document.querySelector('#btnSearch');
+const resultSearch = document.querySelector('#products')
+
+const filterSearch = () => {
+    console.log(search.value);
+    resultSearch.innerHTML = '';
+
+    const textoSearch = search.value.toLowerCase();
+
+    for(let producto of products){
+        let nombre = producto.name.toLowerCase();
+        if(nombre.indexOf(textoSearch !== -1)){
+            resultSearch.innerHTML += `<div class="card-product">
+            <div class="card-img">
+              <img src="${producto.img}" />
+            </div>
+            <div class="card-tittle">
+              <h2>${producto.name}</h2>
+            </div>
+            <div class="card-bid">
+              <h3>$${producto.price}</h3>
+
+              <button class="btn-add-card">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>`
+        }
+    }
+
+    if(resultSearch.innerHTML === ''){
+        resultSearch.innerHTML += `<div>
+        <h3>Producto no encontrado..</h3>
+      </div>`
+    }
+}
+
+btnSearch.addEventListener('click', filterSearch);
+search.addEventListener('keyup', filterSearch);
+
+filterSearch();

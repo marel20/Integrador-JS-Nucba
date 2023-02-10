@@ -141,7 +141,7 @@ nav {
     height: 80vh;
     border-radius: 10px;
     transition: ease-in-out 0.5s;
-    transform: translateY(-120%);
+    transform: translateY(-140%);
     overflow: auto;
     padding: 15px;
 }
@@ -183,6 +183,9 @@ nav {
     flex-direction: column;
     margin: 0 auto;
     gap: 15px;
+    position: fixed;
+    bottom: 30px;
+    left: 15%;
     width: 70%;
 }
 
@@ -212,24 +215,46 @@ nav {
 
 /* search */
 #search {
-    margin: 20px auto;
+    margin: 50px auto 30px auto;
 }
 
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 .search-bar input {
     display: flex;
     width: 90%;
     margin: 0 auto;
     height: 40px;
     border-radius: 10px;
-    border: none;
+    border: none !important;
+    background: var(--details);
+    color: var(--tx-details);
+    font-weight: bold;
     padding: 10px;
     box-shadow: 1px 1px 2px 3px var(--details-secondary);
 }
-
 .search-bar input::placeholder {
     letter-spacing: 1.5px;
     color: var(--tx-details);
     font-weight: bold;
+}
+.search-bar button{
+    background: var(--bg-secondary);
+    color: var(--tx-details);
+    border: none !important;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.search-bar button:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+    color: var(--details);
+    background: var(--bg-primary);
 }
 
 /* home style */
@@ -442,7 +467,7 @@ input[id="7"]:checked~.pagination .pagination-item[for="7"] {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 30%;
+    width: 20%;
     margin: 20px auto;
     background: var(--bg-primary);
     padding: 15px;
@@ -584,9 +609,9 @@ form button:hover {
     margin-top: -100px;
     margin-bottom: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 .location h3{
     margin-bottom: 30px;
