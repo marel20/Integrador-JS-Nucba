@@ -52,7 +52,7 @@
     }
 
     .card-product{
-        width: 95%;
+        width: 45%;
     }
     .card-tittle h2, .card-bid h3{
         font-size: 25px;
@@ -162,7 +162,7 @@
     }
 
     .card-product{
-        width: 45%;
+        width: 30%;
     }
     .card-tittle h2, .card-bid h3{
         font-size: 22px;
