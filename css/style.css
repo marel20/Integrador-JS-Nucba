@@ -469,7 +469,8 @@ input[id="7"]:checked~.pagination .pagination-item[for="7"] {
     gap: 20px;
     width: 20%;
     margin: 20px auto;
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
+    box-shadow: 2px 2px 8px 8px var(--details-secondary);
     padding: 15px;
     border-radius: 10px;
 }
@@ -487,8 +488,8 @@ input[id="7"]:checked~.pagination .pagination-item[for="7"] {
 }
 
 .btn-add-card {
-    background: var(--bg-secondary);
-    color: var(--tx-details);
+    background: var(--bg-primary);
+    color: var(--tx-primary);
     border: none;
     border-radius: 10px;
     padding: 10px;
