@@ -146,6 +146,13 @@ nav {
     padding: 15px;
 }
 
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
 .take-off {
     transform: translateY(0%);
 }
@@ -249,6 +256,7 @@ nav {
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
+    transition: all .5s;
 }
 .search-bar button:hover{
     transform: scale(1.1);
@@ -429,7 +437,7 @@ input[id="7"]:checked~.pagination .pagination-item[for="7"] {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 15px;
-    margin-bottom: -30px;
+    width: 95%;
 }
 
 .btn-filter {
@@ -437,9 +445,12 @@ input[id="7"]:checked~.pagination .pagination-item[for="7"] {
     color: var(--tx-primary);
     padding: 16px;
     border-radius: 16px;
-    width: 20%;
+    border: none !important;
+    width: 10%;
     text-align: center;
     cursor: pointer;
+    margin-top: 10px;
+    transition: all .5s;
 }
 .btn-filter:hover{
     transform: scale(1.1);
@@ -453,6 +464,27 @@ input[id="7"]:checked~.pagination .pagination-item[for="7"] {
     font-size: 20px;
     transition: all .5s;
     transform: scale(1.1);
+}
+
+.btn-load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 10%;
+    background: var(--bg-secondary);
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.btn-load:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+    background: var(--bg-primary);
+    font-weight: bold;
 }
 
 .cards {

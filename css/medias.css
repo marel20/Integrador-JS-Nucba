@@ -61,6 +61,10 @@
         font-size: 30px;
     }
 
+    .btn-load{
+        width: 50%;
+    }
+
     .filter{
         flex-wrap: wrap;
     }
@@ -169,6 +173,10 @@
     }
     .btn-add-card i{
         font-size: 25px;
+    }
+
+    .btn-load{
+        width: 50%;
     }
 
     .filter{

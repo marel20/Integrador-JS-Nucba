@@ -67,11 +67,12 @@
 
           <div id="cart-menu" class="container-cart">
             <div class="list-cart">
-              <div id="cart-product"></div>
+              <div id="cart-product" class="cart-product"></div>
             </div>
+            <div class="total"><p>Total</p> <h3 class="cart-total"></h3></div>
             <div class="btn-cart">
-              <button>Vaciar Carrito</button>
-              <button>Finalizar Compra</button>
+              <button class="btn-delete-product">Vaciar Carrito</button>
+              <button class="btn-buy-cart">Finalizar Compra</button>
             </div>
           </div>
         </section>
@@ -153,115 +154,27 @@
       </section>
 
       <section id="company">
-        <!-- <article>
-          <div>
-            <iframe
-            title="Noticias"
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnorick1&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-              width="330"
-              height="400"
-              scrolling="yes"
-              frameborder="0"
-              allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            >
-            </iframe>
-          </div>
-        </article> -->
+        
       </section>
       <section class="offers">
         <article>
           <h2 class="h2">Nuestras ofertas semanales</h2>
-          <div id="offersProducts" class="cards">
-            <!-- <div id="card-product" class="card-product">
-              <div id="card-img" class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div id="card-tittle" class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div id="card-bid" class="card-bid">
-                <h3>$179.60</h3>
-                
-                <button id="add-card" class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
+          <div id="offersProducts" class="offers-products cards">
 
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
-
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
-
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
-
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div> -->
           </div>
         </article>
       </section>
       <section>
         <div class="filter">
-          <div class="btn-filter">Todos</div>
-          <div class="btn-filter">Frescos</div>
-          <div class="btn-filter">Almacén</div>
-          <div class="btn-filter">Bazar</div>
-          <div class="btn-filter">Bebidas</div>
-          <div class="btn-filter">Mascotas</div>
-          <div class="btn-filter">Limpieza</div>
-          <div class="btn-filter">Perfumería</div>
-          <div class="btn-filter">Otros</div>
+          <button class="btn-filter active">Todos</button>
+          <button class="btn-filter" data-filter="frescos">Frescos</button>
+          <button class="btn-filter" data-filter="almacen">Almacén</button>
+          <button class="btn-filter" data-filter="bazar">Bazar</button>
+          <button class="btn-filter" data-filter="bebidas">Bebidas</button>
+          <button class="btn-filter" data-filter="mascotas">Mascotas</button>
+          <button class="btn-filter" data-filter="perfumeria">Perfumería</button>
+          <button class="btn-filter" data-filter="limpieza">Limpieza</button>
+          <button class="btn-filter" data-filter="otros">Otros</button>
         </div>
         <section id="search">
           <article>
@@ -272,83 +185,10 @@
           </article>
         </section>
         <article>
-          <div id="products" class="cards">
-            <!-- <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
+          <div id="products" class="products cards">
 
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
-
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
-
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
-
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div>
-            <div class="card-product">
-              <div class="card-img">
-                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
-              </div>
-              <div class="card-tittle">
-                <h2>Shampoo y Acondicionador Dove</h2>
-              </div>
-              <div class="card-bid">
-                <h3>$179.60</h3>
-
-                <button class="btn-add-card">
-                  <i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-            </div> -->
           </div>
+          <div class="btn-load">Ver Más</div>
         </article>
       </section>
 
@@ -394,6 +234,8 @@
         </p>
       </div>
     </footer>
+
+    <div class="add-product"></div>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/data.js"></script>

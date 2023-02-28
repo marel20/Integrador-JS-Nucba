@@ -1,90 +1,81 @@
-// btn-up
-window.addEventListener('scroll', btnUp)
+//productos
+const productss = document.querySelector('.products');
+//productos carrito
+const cartProduct = document.querySelector('.cart-product');
+//total carrito
+const totalCart = document.querySelector('.cart-total');
+//ofertas
+const offers = document.querySelector('.offers-products');
+//categorias
+const category = document.querySelector('.filter');
+//filtro categorias
+const filterCategory = document.querySelector('.btn-filter');
+//boton ver mas
+const load = document.querySelector('.btn-load');
+//boton comprar
+const buyCart = document.querySelector('.btn-buy-cart');
+//carrito
+const cartMenu = document.querySelector(".container-cart");
+//modal de agregado al carrito.
+const successModal = document.querySelector(".add-product");
+//modal de eliminado del carrito.
+const deleteBtn = document.querySelector(".btn-delete-product");
 
-function btnUp() {
-    const nav = document.getElementById('nav')
-if(window.scrollY > nav.offsetHeight + 1100) {
-    this.document.getElementById('up').style.display = 'block';
-} else {
-    document.getElementById('up').style.display = 'none';
-}
-}
+// let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// navbar
- const toggle = document.querySelector('.nav-toggle');
- const links = document.querySelector('nav');
+// const saveLocal = (cartList) => {
+//   localStorage.getItem("cart", JSON.stringify(cartList));
+// }
 
- toggle.addEventListener('click', () => {
-     toggle.classList.toggle('rotate');
-     links.classList.toggle('active');
-})
+// const showProduct = (product) => {
+//   const {id, name, price, img} = product;
+//   return `
+//   <!-- <div class="card-product">
+//   <div class="card-img">
+//     <img src="${img}" alt="oferta5" />
+//   </div>
+//   <div class="card-tittle">
+//     <h2>${name}</h2>
+//   </div>
+//   <div class="card-bid">
+//     <h3>$${price}</h3>
+
+//     <button class="btn-add-card"
+//     data-id="${id}"
+//     data-name="${name}"
+//     data-price="${price}"
+//     data-img="${img}"
+//     >
+//       <i class="fas fa-cart-plus"></i>
+//     </button>
+//   </div>
+// </div>
+//   `
+// }
+
+// const showProductsDivided = (index = 0) => {
+//   productss.innerHTML += controller.productsdivided[index].map(showProduct).join("");
+// }
+
+// const showProductsFilter = (filterCategory) => {
+//   const listProduct = products.filter((product) => {
+//     return product.filterCategory === filterCategory
+//   }) 
+//   product.innerHTML = listProduct.map(showProduct).join("");
+// }
+
+// const showProducts = (index = 0, categories = undefined) => {
+//   if (!categories) {
+//     showProductsDivided(index);
+//     return;
+//   }
+//   showProductsFilter(categories)
+// }
 
 
-//cart-toggle
-var openClose = document.getElementById("open-close");
-var menuHamburguer = document.getElementById("cart-menu");
 
-openClose.addEventListener("click", () =>{
-    menuHamburguer.classList.toggle("take-off");
-})
+// const init = () => {
+//   showProducts();
+// }
 
-// filter
-
-const btnFilter    = document.querySelectorAll('.btn-filter')
-    
-btnFilter.forEach( ( cadaBtnFilter , i )=>{
-    btnFilter[i].addEventListener('click', ()=>{
-        
-        btnFilter.forEach( ( cadaBtnFilter , i )=>{
-            btnFilter[i].classList.remove('filter-active')
-        })
-
-        btnFilter[i].classList.add('filter-active')
-
-    })
-})
-
-//searchBar
-
-const search = document.querySelector('#searchBar');
-const btnSearch = document.querySelector('#btnSearch');
-const resultSearch = document.querySelector('#products')
-
-const filterSearch = () => {
-    console.log(search.value);
-    resultSearch.innerHTML = '';
-
-    const textoSearch = search.value.toLowerCase();
-
-    for(let producto of products){
-        let nombre = producto.name.toLowerCase();
-        if(nombre.indexOf(textoSearch !== -1)){
-            resultSearch.innerHTML += `<div class="card-product">
-            <div class="card-img">
-              <img src="${producto.img}" />
-            </div>
-            <div class="card-tittle">
-              <h2>${producto.name}</h2>
-            </div>
-            <div class="card-bid">
-              <h3>$${producto.price}</h3>
-
-              <button class="btn-add-card">
-                <i class="fas fa-cart-plus"></i>
-              </button>
-            </div>
-          </div>`
-        }
-    }
-
-    if(resultSearch.innerHTML === ''){
-        resultSearch.innerHTML += `<div>
-        <h3>Producto no encontrado..</h3>
-      </div>`
-    }
-}
-
-btnSearch.addEventListener('click', filterSearch);
-search.addEventListener('keyup', filterSearch);
-
-filterSearch();
+// init();

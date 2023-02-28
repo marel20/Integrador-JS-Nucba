@@ -421,3 +421,18 @@ const products = [
     },
 ]
 
+// const loadProducts = (size) => {
+//     let productsdivided = [];
+
+//     for (let i = 0; i < products.length; i += size){
+//         productsdivided.push(products.slice(i, i + size));
+//     }
+//     return productsdivided;
+// };
+
+// const controller = {
+//     productsdivided: loadProducts(6),
+//     nextProductsIndex: 1,
+//  	productsLimit: loadProducts(6).length,
+// };
+
